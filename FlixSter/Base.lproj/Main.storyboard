@@ -22,9 +22,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" text="" id="YUw-cc-4vd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="206" id="ICg-tA-c9M" customClass="MovieCell">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="206"/>
+                                        <rect key="frame" x="0.0" y="72" width="375" height="206"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ICg-tA-c9M" id="BgO-y5-aqW">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="205.5"/>
@@ -75,6 +80,7 @@
                     <navigationItem key="navigationItem" title="Movies" id="PN7-AV-Bq2"/>
                     <connections>
                         <outlet property="activityIndicator" destination="oyZ-Ng-LGP" id="Ig0-Kj-UtD"/>
+                        <outlet property="searchBar" destination="YUw-cc-4vd" id="opO-yK-3G8"/>
                         <outlet property="tableView" destination="2wQ-mx-qWW" id="Rox-Sn-vys"/>
                     </connections>
                 </viewController>
@@ -141,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJH-kN-4pw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1372" y="1948.8755622188908"/>
+            <point key="canvasLocation" x="-482" y="2044"/>
         </scene>
         <!--List-->
         <scene sceneID="uJh-72-8Tb">
@@ -231,6 +237,7 @@
                                         </view>
                                         <connections>
                                             <outlet property="posterView" destination="2bF-N9-2Jh" id="pbl-SD-boF"/>
+                                            <segue destination="7Dg-qk-Qjt" kind="show" id="vxw-Cr-roJ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -249,4 +256,7 @@
             <point key="canvasLocation" x="621.60000000000002" y="1069.1154422788607"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mou-Qo-fJZ"/>
+    </inferredMetricsTieBreakers>
 </document>
