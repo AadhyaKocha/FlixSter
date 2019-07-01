@@ -108,6 +108,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
     MovieCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MovieCell"];
     //cell.selectionStyle = UITableViewCellSelectionStyleNone;
     UIView *backgroundView = [[UIView alloc] init];
